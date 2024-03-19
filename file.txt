@@ -1,0 +1,6 @@
+<app-test
+    [a]="1"
+    [camelCase]="2"
+    [field]="3"
+    (something)="otherEvent($event)"
+></app-test>
