@@ -30,12 +30,12 @@ items.forEach((item) => {
                 const propertyValue = property
                     .replace("[", "")
                     .replace("]", "");
-                inputDecoratorString += `   @Input() ${propertyValue}: any;\n`;
+                inputDecoratorString += `    @Input() ${propertyValue}: any;\n`;
             } else if (property.startsWith("(")) {
                 const propertyValue = property
                     .replace("(", "")
                     .replace(")", "");
-                outputDecoratorString += `   @Output() ${propertyValue} = new EventEmitter<any>()\n`;
+                outputDecoratorString += `    @Output() ${propertyValue} = new EventEmitter<any>();\n`;
             }
         }
 
